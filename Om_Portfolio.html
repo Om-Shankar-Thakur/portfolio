@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/logo.png.png"
+            class="logo"
+            width="200"
+            height="150"
+          />
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <p>Developer</p>
+        <div class="header-text"></div>
+        <h1>
+          Hi, I'm <span>Om Shankar Thakur</span> <br />Welcome to my Portfolio
+        </h1>
+      </div>
+    </div>
+    <!-----------------about----------------->
+    <div id="about">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png.JPG" width="400" height="500" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I would describe myself as an industrious, astute, and
+            technically-focused data science engineer who has the capacity to take on a
+            large workload and deliver everything that is expected of me to a
+            high standard, and on time. I have a track record of achievement.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-content active-tab" id="skills">
+            <ul>
+                <li><span>UI?UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web/App Development</li>
+                <li><span>App Development</span><br />Building Anaroid / iOS apps</li>
+                <li><span>Programming Languages</span><br />Python, C, C++, JAVA - Proficient<br>R - Intermediate</li>
+                <li><span>Data visualization</span><br />Experienced in creating visualizations using Matplotlib, Seaborn, and Tableau</li>
+                <li><span>Statistical analysis</span><br />Comfortable with hypothesis testing, regression analysis, and ANOVA</li>
+                <li><span>Machine learning</span><br>Familiar with classification, clustering, and decision tree algorithms</li>
+                <li><span>Finance</span><br> Knowledgeable in financial data analysis and modeling, familiar with financial data APIs and libraries</li>
+                
+            </ul>
+          </div>
+            
+            <style>
+                li{
+                    line-height: 1.5;
+                }
+            </style>
+
+            <div class="tab-content " id="education">
+                <ul>
+                    <li><span>2023 - Current</span><br />B.Tech from Amity University Jharkhand</li>
+                    <li><span>2018 </span><br />Intermediate from BBP College</li>
+                    <li><span>2016</span><br />Metriculation from St. Joseph's School</li>
+                </ul>
+            </div>   
+              
+          </div>
+        </div>
+      </div>
+    </div>
+<!-----------------services----------------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Web design is an important aspect of creating a successful website 
+                    as it can greatly impact user experience and ultimately affect the 
+                    success of the website. A well-designed website can help attract and 
+                    retain visitors, improve engagement, and increase conversions. Use of coding languages 
+                    such as HTML, CSS, and JavaScript to build the website and make it functional.</p>
+                <a href="#">learn more </a>
+            </div>
+            <div>
+                <h2>Data Science</h2>
+                <p> Data science is an important field that is becoming increasingly essential in today's data-driven world. 
+                    It has the potential to transform various industries and drive innovation, making it an exciting and dynamic field
+                    to work in.It involves the application of various techniques such as data mining, machine learning, and statistical 
+                    modeling to analyze and interpret complex data sets.</p>
+                <a href="#">learn more </a>
+            </div><div>
+                <h2>Data Visualization</h2>
+                <p>data visualization is an important aspect of data analysis and communication,
+                    and can be a powerful tool for uncovering insights and making data-driven 
+                    decisions. Data visualization is a powerful tool that can help you visualize.
+                    There are various tools and software available for creating data visualizations, 
+                    such as Tableau, Power BI, and Python libraries like Matplotlib and Seaborn.
+                </p>
+                <a href="#">learn more </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------------portfolio------------------------>
+<div id="portfolio">
+ <div class="container">
+  <h1 class "sub-title">My Work</h1>
+  <div class="work-list">
+    <div class="work">
+      <img src="images/work-1.png">
+      <div class="layer">
+        <h3>News Website</h3>
+        <p>This is a simple News App web application that allows users to browse news articles based on different categories such as IPL, Finance, and Politics, or search for news by entering a specific keyword..</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+
+    <div class="work">
+      <img src="images/work-2.png">
+      <div class="layer">
+        <h3>Music App</h3>
+        <p>The app connects you to the talented people around the world.
+          Download it from play store.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    
+    <div class="work">
+      <img src="images/work-3.png">
+      <div class="layer">
+        <h3>Online Shopping App</h3>
+        <p>The app connects you to the talented people around the world.
+          Download it from play store.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="btn">See More</a>
+ </div> 
+</div>
+
+<!--------------------------------contact-------------------------
+
+<ul>
+  <li><a href="mailto:yourname@yourdomain.com"><img src="email_icon.png" alt="Email"></a></li>
+  <li><a href="https://twitter.com/yourusername"><img src="twitter_icon.png" alt="Twitter"></a></li>
+  <li><a href="https://www.facebook.com/yourusername"><img src="facebook_icon.png" alt="Facebook"></a></li>
+  <li><a href="tel:+1-123-456-7890"><img src="phone_icon.png" alt="Phone"></a></li>
+</ul>
+-->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-light fa-paper-plane"></i>Email : omshankar466@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>   Phone : +91-790331466</p>
+        <div class="social-icons">
+          <a href="#" ><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" ><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+          <a href="#" ><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" ><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <input type="text" name="Phone" placeholder="Your Phone" required>
+          
+          <button type="submit" class="btn btn2">submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="copywrite">
+      <p>Copyright © 2024. Made  <i class="fas fa-heart"></i>by Om Shankar Thakur</p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-content");
+    
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+  </body>
+</html>

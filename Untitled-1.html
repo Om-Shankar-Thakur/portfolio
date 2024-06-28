@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/logo.png.png"
+            class="logo"
+            width="200"
+            height="150"
+          />
+
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <p>Developer</p>
+        <div class="header-text"></div>
+        <h1>
+          Hi, I'm <span>Om Shankar Thakur</span> <br />Welcome to my Portfolio
+        </h1>
+      </div>
+    </div>
+    <!-----------------about----------------->
+    <div id="about">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png.JPG" width="400" height="500" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            I would describe myself as an industrious, astute, and
+            technically-focused data engineer who has the capacity to take on a
+            large workload and deliver everything that is expected of me to a
+            high standard, and on time. I have a track record of achievement.
+          </p>
+
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links"onclick="opentab('education')>Education</p>
+        </div>
+
+        <div class="tab-content active-tab" id="skills">
+            <ul>
+                <li><span>UI?UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web/App Development</li>
+                <li><span>App Development</span><br />Building Anaroid / iOS apps</li>
+                <li><span>Programming Languages</span><br />Python, C, C++, JAVA - Proficient<br>R - Intermediate</li>
+                <li><span>Data visualization</span><br />Experienced in creating visualizations using Matplotlib, Seaborn, and Tableau</li>
+                <li><span>Statistical analysis</span><br />Comfortable with hypothesis testing, regression analysis, and ANOVA</li>
+                <li><span>Data Mining</span><br />Comfortable with data mining, and statistical data analysis</li>
+                <li><span>Machine learning</span><br>Familiar with classification, clustering, and decision tree algorithms</li>
+                <li><span>Finance</span><br> Knowledgeable in financial data analysis and modeling, familiar with financial data APIs and libraries</li>
+            </ul>
+        </div>
+
+        <div class="tab-content active-tab" id="education">
+            <ul>
+                <li><span>2023 - Current</span><br />B.Tech from Amity University</li>
+                <li><span>2018 </span><br />Intermediate from BBP College</li>
+                <li><span>2016</span><br />Metriculation from St. Joseph's School</li>
+            </ul>
+        </div>            
+              
+        </div>
+        </div>
+      </div>
+    </div>
+
+<script>
+
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-content");
+    
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+  </body>
+</html>
